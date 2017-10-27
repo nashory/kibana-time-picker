@@ -1,4 +1,33 @@
 {
-	"name": "kibana-time-plugin",
-	"version": "kibana"
+  "name": "time-picker",
+  "version": "0.0.1",
+  "description": "time-picker",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "kibana": {
+    "version": "5.5.3"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "start": "plugin-helpers start",
+    "test:server": "plugin-helpers test:server",
+    "test:browser": "plugin-helpers test:browser",
+    "build": "plugin-helpers build",
+    "postinstall": "plugin-helpers postinstall"
+  },
+  "devDependencies": {
+    "@elastic/babel-preset-kibana": "^0.1.0",
+    "@elastic/eslint-config-kibana": "0.0.2",
+    "@elastic/plugin-helpers": "^6.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "4.1.8",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^3.5.0",
+    "eslint": "1.10.3",
+    "eslint-plugin-mocha": "1.1.0"
+  },
+  "dependencies": {
+    "angular-bootstrap-colorpicker": "^3.0.31",
+    "angulargrid": "^0.6.5"
+  }
 }
